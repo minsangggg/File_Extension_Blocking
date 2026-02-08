@@ -1,0 +1,16 @@
+/target
+*.log
+*.jar
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs
+서버 개발자 과제.pdf

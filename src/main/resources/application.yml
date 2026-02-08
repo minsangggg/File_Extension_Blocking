@@ -1,0 +1,24 @@
+﻿server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/fileblock}
+    username: ${SPRING_DATASOURCE_USERNAME:fileblock}
+    password: ${SPRING_DATASOURCE_PASSWORD:fileblock}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  fixed-extensions:
+    - bat
+    - cmd
+    - com
+    - cpl
+    - exe
+    - scr
+    - js

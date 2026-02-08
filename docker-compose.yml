@@ -1,0 +1,27 @@
+﻿services:
+  db:
+    image: postgres:16
+    container_name: fileblock-db
+    environment:
+      POSTGRES_DB: fileblock
+      POSTGRES_USER: fileblock
+      POSTGRES_PASSWORD: fileblock
+    ports:
+      - "5433:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: fileblock-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/fileblock
+      SPRING_DATASOURCE_USERNAME: fileblock
+      SPRING_DATASOURCE_PASSWORD: fileblock
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
