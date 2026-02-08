@@ -38,3 +38,9 @@
 - `POST /api/extensions/custom` body: `{ "ext": "sh" }`
 - `DELETE /api/extensions/custom/{id}`
 - `POST /api/files/upload` multipart/form-data `file`
+
+## 배포(EC2 + Elastic IP)
+- 배포 주소: `http://15.165.177.33:8080/` (Elastic IP)
+- 인스턴스: Ubuntu 22.04 LTS / t2.micro
+- 보안 그룹: SSH(22), HTTP(80), TCP(8080) 허용
+
