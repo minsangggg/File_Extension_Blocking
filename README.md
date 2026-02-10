@@ -1,6 +1,6 @@
 ﻿# File Extension Blocking
 
-파일 확장자 차단 정책을 관리하는 과제 구현입니다.
+파일 확장자 차단 정책을 관리하는 과제입니다.
 
 ## 기술 스택
 - Java 17 / Spring Boot 3
