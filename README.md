@@ -40,7 +40,11 @@
 - `POST /api/files/upload` multipart/form-data `file`
 
 ## 배포(EC2 + Elastic IP)
-- 배포 주소: `http://15.165.177.33:8080/` (Elastic IP)
+- 배포 주소: `http://15.165.177.33:8080/` (Elastic IP) -->종료예정
 - 인스턴스: Ubuntu 22.04 LTS / t2.micro
 - 보안 그룹: SSH(22), HTTP(80), TCP(8080) 허용
+
+## 시연영상
+![file](https://github.com/user-attachments/assets/4f2c4f4b-fc99-46c4-bb66-3bd3421f502e)
+
 
